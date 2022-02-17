@@ -58,6 +58,7 @@ Supported plugins
 - [Fern](https://github.com/lambdalisue/fern.vim)
 - [Barbar](https://github.com/romgrk/barbar.nvim)
 - [nvim-ts-rainbow](https://github.com/p00f/nvim-ts-rainbow)
+- [Better Whitespace](https://github.com/ntpeters/vim-better-whitespace)
 
 ## ⚡️ Requirements
 

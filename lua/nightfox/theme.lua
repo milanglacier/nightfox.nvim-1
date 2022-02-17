@@ -473,6 +473,9 @@ function M.apply(colors, config)
     rainbowcol5 = { fg = c.cyan },
     rainbowcol6 = { fg = c.magenta },
     rainbowcol7 = { fg = c.pink },
+
+    -- Better whitespace
+    ExtraWhitespace = { bg = c.error },
   }
 
   return theme
