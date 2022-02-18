@@ -60,7 +60,7 @@ function M.init()
     git = {
       add      = "#70a288",
       change   = "#a58155",
-      delete   = "#904a6a",
+      delete   = "#B34F6D",
       conflict = "#c07a6d",
     },
 
@@ -73,22 +73,18 @@ function M.init()
     error    = "#f48771",
     warning  = "#cca700",
     info     = "#75beff",
-    hint     = "#79e0ff",
+    hint     = "#56E2C4",
   }
 
   util.bg = colors.bg
 
   colors.bg_highlight = util.brighten(colors.bg, 0.10)
-
-  colors.fg_gutter = util.lighten(colors.fg_gutter, 0.9)
-  P(colors.fg_gutter)
-
   colors.fg_alt = util.darken(colors.fg, 0.85, "#000000")
 
   colors.diff = {
-    add = util.darken(colors.green, 0.15),
-    delete = util.darken(colors.red, 0.15),
-    change = util.darken(colors.blue, 0.15),
+    add = util.darken(colors.green, 0.1),
+    delete = util.darken(colors.red, 0.1),
+    change = util.darken(colors.blue, 0.1),
     text = util.darken(colors.blue, 0.4),
   }
 
