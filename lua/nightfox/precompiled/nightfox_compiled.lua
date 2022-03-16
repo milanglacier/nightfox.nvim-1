@@ -118,6 +118,10 @@ highlight LspTroubleNormal guifg=#71839b guibg=#131a24 gui=NONE guisp=NONE |
 highlight LspTroubleText guifg=#aeafb0 guibg=NONE gui=NONE guisp=NONE |
 highlight MatchParen guifg=#dbc074 guibg=NONE gui=bold guisp=NONE |
 highlight ModeMsg guifg=#dbc074 guibg=NONE gui=bold guisp=NONE |
+highlight ModesCopy guifg=NONE guibg=#435c5a gui=NONE guisp=NONE |
+highlight ModesDelete guifg=NONE guibg=#5f3548 gui=NONE guisp=NONE |
+highlight ModesInsert guifg=NONE guibg=#376770 gui=NONE guisp=NONE |
+highlight ModesVisual guifg=NONE guibg=#4e4572 gui=NONE guisp=NONE |
 highlight MoreMsg guifg=#719cd6 guibg=NONE gui=bold guisp=NONE |
 highlight MsgArea guifg=#aeafb0 guibg=NONE gui=NONE guisp=NONE |
 highlight NeogitBranch guifg=#dbc074 guibg=NONE gui=NONE guisp=NONE |

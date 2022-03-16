@@ -51,22 +51,22 @@ function M.load(name)
     name .. config.options.compile_file_suffix .. ".lua"
   )
 
-  if util.exists(precompiled_file) then
-    vim.cmd("luafile " .. precompiled_file)
-  elseif not override.has_override and not config.has_options then
-    require("nightfox.precompiled." .. name .. "_compiled")
-  else
-    local spec = require("nightfox.spec").load(name)
-    local groups = require("nightfox.group").load(spec)
+  -- if util.exists(precompiled_file) then
+  --   vim.cmd("luafile " .. precompiled_file)
+  -- elseif not override.has_override and not config.has_options then
+  --   require("nightfox.precompiled." .. name .. "_compiled")
+  -- else
+  local spec = require("nightfox.spec").load(name)
+  local groups = require("nightfox.group").load(spec)
 
-    clear_hl()
-    set_info(spec)
-    hl.highlight(groups)
+  clear_hl()
+  set_info(spec)
+  hl.highlight(groups)
 
-    if config.options.terminal_colors then
-      set_terminal_colors(spec)
-    end
+  if config.options.terminal_colors then
+    set_terminal_colors(spec)
   end
+  -- end
 end
 
 return M
